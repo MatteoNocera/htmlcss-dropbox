@@ -13,6 +13,7 @@ body {
 
 :root {
     --drop-white: white;
+    --drop-dark-light: #f3f3f4;
     --drop-light: #f5f5f5;
     --drop-principal: #b4d0e7;
     --drop-accent: #0061ff;
@@ -32,9 +33,11 @@ body {
 }
 
 header a {
-    text-decoration: none;
     color: var(--drop-black);
-    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* #endregion Common */
@@ -49,6 +52,9 @@ header a {
     border-radius: 0.5rem;
 }
 
+.buy {
+    text-decoration:  underline;
+}
 
 /* #endregion Btn */
 
@@ -79,8 +85,15 @@ header a {
 .container {
     max-width: 60%;
     margin: auto;
+}
+
+.jumbotron .container {
     height: 650px;
     padding-top: 3rem;
+}
+
+.plans .container {
+    padding: 7rem 4rem;
 }
 
 main {
@@ -101,6 +114,14 @@ main {
     width: calc(100% / 12 * 8);
 }
 
+h2 {
+    font-size: 3rem;
+    padding-bottom: 2.5rem;
+}
+
+.p_b1 {
+    padding-bottom: 1rem;
+}
 
 
 
@@ -115,6 +136,7 @@ header {
     width: 100vw;
     z-index: 10;
 }
+
 
 nav {
     justify-content: space-between;
@@ -150,7 +172,8 @@ h1 {
     background-color: var(--drop-principal);
 }
 .jumbotron img {
-    width: 120%;
+    width: 130%;
+    height: 130%;
 }
 
 .jumbotron .col_text {
@@ -159,26 +182,48 @@ h1 {
     height: 100%;
 }
 
-.row {
+.jumbotron .row {
     height: 60%;
- }
+}
 
+.period label {
+    padding-left: 0.2rem;
+    padding-right: 1rem;
+}
 
+.col_cards {
+    width: calc(100% / 12 * 4 - 2rem);
+    border: 2px solid var(--drop-dark-light);
+    margin: 0 1rem;
 
+}
 
+.row_cards {
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    
+}
 
+.person {
+    text-align: center;
+    border-bottom: 2px solid var(--drop-dark-light);
+    padding: 0.5rem 0;
+}
 
+.figure {
+    padding: 1rem;
+    line-height: 3rem;
+}
 
+hr {
+    width: 20%;
+}
 
-
-
-
-
-
-
-
-
-
+.point {
+    padding-top: 0.5rem;
+    align-items: baseline;
+    gap: 0.5rem;
+}
 
 
 
