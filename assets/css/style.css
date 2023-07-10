@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    min-width: 1170px;
 }
 
 :root {
@@ -45,10 +46,11 @@ header a {
     background-color: var(--drop-accent);
     color: var(--drop-white);
     padding: 0.2rem 1rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
-/* #endregion Common */
+
+/* #endregion Btn */
 
 
 
@@ -63,9 +65,47 @@ header a {
     height: 1000px;
 }
 
+.debug .container {
+    background-color: rgba(255, 166, 0, 0.596);
+}
+
 
 
 /* #endregion Debug */
+
+
+/* #region Utilities */
+
+.container {
+    max-width: 60%;
+    margin: auto;
+    height: 650px;
+    padding-top: 3rem;
+}
+
+main {
+    height: calc(100vh - 5rem);
+    overflow-y: auto;
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+}
+
+.col_text {
+    width: calc(100% / 12 * 4);
+    padding-right: 1rem;
+    
+}
+
+.col_img {
+    width: calc(100% / 12 * 8);
+}
+
+
+
+
+/* #endregion Utilities */
+
 
 /* #region Header */
 
@@ -73,6 +113,7 @@ header {
     height: 5rem;
     position: fixed;
     width: 100vw;
+    z-index: 10;
 }
 
 nav {
@@ -96,4 +137,52 @@ nav {
 
 
 /* #endregion Header */
+
+
+/* #region Main */
+
+h1 {
+    padding-bottom: 2rem;
+    font-size: 4rem;
+}
+
+.jumbotron {
+    background-color: var(--drop-principal);
+}
+.jumbotron img {
+    width: 120%;
+}
+
+.jumbotron .col_text {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.row {
+    height: 60%;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #endregion Main */
+
 
