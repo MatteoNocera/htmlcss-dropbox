@@ -30,7 +30,27 @@ body {
     display: flex;
 }
 
+header a {
+    text-decoration: none;
+    color: var(--drop-black);
+    font-size: 18px;
+}
+
 /* #endregion Common */
+
+
+/* #region Btn */
+
+.btn {
+    background-color: var(--drop-accent);
+    color: var(--drop-white);
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+}
+
+/* #endregion Common */
+
+
 
 /* #region Debug */
 
@@ -38,7 +58,7 @@ body {
     background-color: #a2d39b;
 }
 
-main {
+.debug main {
     background-color: rgba(0, 139, 139, 0.556);
     height: 1000px;
 }
@@ -64,6 +84,11 @@ nav {
 
 .menu_bar {
     gap: 1rem;
+    align-items: center;
+}
+
+#start {
+    color: var(--drop-white);
 }
 
 
