@@ -7,3 +7,19 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+:root {
+    --drop-white: white;
+    --drop-light: #f5f5f5;
+    --drop-principal: #b4d0e7;
+    --drop-accent: #0061ff;
+    --drop-black: #000000;
+    --drop-designit: #a2d39b;
+    --drop-designit-shadow: #d1e9cd;
+    --drop-asu: #61082b;
+    --drop-uf-florida: #0093ce;
+    --drop-topps: #ff1c1c;
+    --drop-wbr: #d5001f;
+    --drop-lonely-planet: #0d2481;
+    --drop-clear-channel: #ffd830;
+}
