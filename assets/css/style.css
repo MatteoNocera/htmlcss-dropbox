@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    min-width: 1170px;
+    min-width: 1480px;
 }
 
 :root {
@@ -83,12 +83,12 @@ a {
 /* #region Utilities */
 
 .container {
-    max-width: 60%;
+    max-width: 80%;
     margin: auto;
 }
 
 .jumbotron .container {
-    height: 650px;
+    height: 600px;
     padding-top: 3rem;
 }
 
@@ -165,25 +165,34 @@ nav {
 
 h1 {
     padding-bottom: 2rem;
-    font-size: 4rem;
+    font-size: 3rem;
+}
+
+.col_text p {
+    line-height: 2rem;
+    padding-bottom: 2rem;
 }
 
 .jumbotron {
     background-color: var(--drop-principal);
 }
 .jumbotron img {
-    width: 130%;
-    height: 130%;
+    width: 100%;
 }
 
 .jumbotron .col_text {
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
+    /* line-height: 1.5rem; */
+    gap: 2rem;
 }
 
-.jumbotron .row {
-    height: 60%;
+.sign {
+    padding: 1rem;
+}
+
+.sign a {
+    color: var(--drop-black);
 }
 
 .period label {
@@ -194,14 +203,12 @@ h1 {
 .col_cards {
     width: calc(100% / 12 * 4 - 2rem);
     border: 2px solid var(--drop-dark-light);
-    margin: 0 1rem;
-
 }
 
 .row_cards {
     flex-wrap: wrap;
     padding-top: 2rem;
-    
+    gap: 1rem;
 }
 
 .person {
