@@ -336,7 +336,7 @@ hr {
 
 #design {
     background-color: var(--drop-designit);
-    box-shadow: 0 0 5px var(--drop-designit-shadow);
+    box-shadow: inset 0 0 0 0.8rem var(--drop-designit-shadow);
 }
 
 #asu {
@@ -383,6 +383,26 @@ hr {
 
 .to_you h2 {
     color: var(--drop-asu);
+}
+
+/* Answer  */
+
+.questions hr {
+    width: 100%;
+    margin: 2.5rem 0;
+}
+
+.question {
+    display: none;
+}
+
+.questions .col_4 {
+    text-align: end;
+    padding-right: 2rem;
+}
+
+.questions .col_4:hover {
+    display: none;
 }
 
 /* #endregion Main */
