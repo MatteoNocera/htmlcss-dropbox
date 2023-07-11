@@ -205,10 +205,16 @@ h1 {
     border: 2px solid var(--drop-dark-light);
 }
 
+.col_12 {
+    width: 100%;
+    border: 2px solid var(--drop-dark-light);
+    margin-top: 2rem;
+}
+
 .row_cards {
     flex-wrap: wrap;
     padding-top: 2rem;
-    gap: 1rem;
+    justify-content: space-between;
 }
 
 .person {
@@ -220,6 +226,10 @@ h1 {
 .figure {
     padding: 1rem;
     line-height: 3rem;
+}
+
+.empty_p{
+    color: var(--drop-white);
 }
 
 hr {
