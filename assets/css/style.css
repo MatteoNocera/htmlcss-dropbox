@@ -99,9 +99,12 @@ a {
 /* #region Utilities */
 
 .container {
-    padding: 7rem 4rem;
     max-width: 80%;
     margin: auto;
+}
+
+main .container {
+    padding: 7rem 4rem;
 }
 
 .container_jumbo {
@@ -111,12 +114,10 @@ a {
     margin: auto;
 }
 
-
 main {
     height: calc(100vh - 5rem);
     overflow-y: auto;
-    position: absolute;
-    top: 5rem;
+    position: relative;
     width: 100%;
 }
 
@@ -160,9 +161,8 @@ main img {
 /* #region Header */
 
 header {
-    height: 5rem;
-    position: fixed;
-    width: 100vw;
+    position: sticky;
+    width: 100%;
     z-index: 10;
 }
 
@@ -407,4 +407,29 @@ hr {
 
 /* #endregion Main */
 
+/* #region Footer */
 
+.foot_site {
+    background-color: var(--drop-black);
+    color: var(--drop-white);
+    position: sticky;
+    padding: 2rem 0;
+}
+
+.col_5 {
+    width: calc(100% / 5);
+}
+
+.unstyled {
+    list-style: none;
+    padding-top: 1rem;
+    line-height: 2rem;
+}
+
+.foot_site a {
+    text-decoration: none;
+    color: var(--drop-white);
+}
+
+
+/* #endregion Footer */
