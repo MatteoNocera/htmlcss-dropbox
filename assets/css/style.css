@@ -65,6 +65,11 @@ a {
     border: 1px solid var(--drop-black);
 }
 
+.btn_to_you {
+    background-color: var(--drop-light);
+    color: var(--drop-black);
+}
+
 
 
 /* #endregion Btn */
@@ -95,7 +100,7 @@ a {
 
 .container {
     padding: 7rem 4rem;
-    max-width: 70%;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -116,9 +121,7 @@ main {
 }
 
 .col_text {
-    width: calc(100% / 12 * 4);
-    padding-right: 1rem;
-    
+    width: calc(100% / 12 * 4);    
 }
 
 .col_img {
@@ -136,6 +139,19 @@ h2 {
 
 main img {
     width: 100%;
+}
+
+.col_cards {
+    width: calc(100% / 12 * 4 - 2rem);
+    margin: 3rem 0;
+}
+
+.col_8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col_4 {
+    width: calc(100% / 12 * 4);
 }
 
 /* #endregion Utilities */
@@ -214,10 +230,12 @@ h1 {
     padding-right: 1rem;
 }
 
-.col_cards {
-    width: calc(100% / 12 * 4 - 2rem);
+.plans .col_cards {
     border: 2px solid var(--drop-dark-light);
-    margin: 3rem 0;
+}
+
+.col_cards h4 {
+    padding-bottom: 2rem;
 }
 
 .col_12 {
@@ -357,6 +375,15 @@ hr {
     
 }
 
+/* To_you  */
+
+.to_you {
+    background-color: var(--drop-principal);
+}
+
+.to_you h2 {
+    color: var(--drop-asu);
+}
 
 /* #endregion Main */
 
