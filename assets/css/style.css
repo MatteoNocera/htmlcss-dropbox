@@ -194,7 +194,6 @@ h1 {
 .jumbotron .col_text {
     flex-direction: column;
     height: 100%;
-    /* line-height: 1.5rem; */
     gap: 2rem;
 }
 
@@ -214,12 +213,13 @@ h1 {
 .col_cards {
     width: calc(100% / 12 * 4 - 2rem);
     border: 2px solid var(--drop-dark-light);
+    margin: 3rem 0;
 }
 
 .col_12 {
     width: 100%;
     border: 2px solid var(--drop-dark-light);
-    margin-top: 2rem;
+    
 }
 
 .row_cards {
@@ -264,6 +264,14 @@ hr {
     padding-bottom: 1rem;
 }
 
+.col_passa {
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.passa_card h4{
+    padding: 1rem 0;
+}
 
 
 /* #endregion Main */
