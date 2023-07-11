@@ -164,6 +164,8 @@ header {
     position: sticky;
     width: 100%;
     z-index: 10;
+    box-shadow: 0px 1px 3px 1px var(--drop-accent);
+    
 }
 
 
@@ -181,6 +183,14 @@ nav {
 
 #start {
     color: var(--drop-white);
+}
+
+.choise {
+    transition: all 3s;
+}
+
+header .choise:hover {
+    border-bottom: 10px solid var(--drop-accent);
 }
 
 
@@ -412,7 +422,6 @@ hr {
 .foot_site {
     background-color: var(--drop-black);
     color: var(--drop-white);
-    position: sticky;
     padding: 2rem 0;
 }
 
