@@ -46,15 +46,26 @@ a {
 /* #region Btn */
 
 .btn {
+    padding: 0.2rem 1.8rem;
+    border-radius: 0.2rem;
+}
+
+.btn_primary {
     background-color: var(--drop-accent);
     color: var(--drop-white);
-    padding: 0.2rem 1rem;
-    border-radius: 0.5rem;
 }
 
 .buy {
     text-decoration:  underline;
 }
+
+.btn_secondary {
+    background-color: var(--drop-white);
+    color: var(--drop-blac);
+    border: 1px solid var(--drop-black);
+}
+
+
 
 /* #endregion Btn */
 
@@ -83,18 +94,18 @@ a {
 /* #region Utilities */
 
 .container {
+    padding: 7rem 4rem;
+    max-width: 70%;
+    margin: auto;
+}
+
+.container_jumbo {
+    height: 600px;
+    padding-top: 3rem;
     max-width: 80%;
     margin: auto;
 }
 
-.jumbotron .container {
-    height: 600px;
-    padding-top: 3rem;
-}
-
-.plans .container {
-    padding: 7rem 4rem;
-}
 
 main {
     height: calc(100vh - 5rem);
@@ -123,7 +134,9 @@ h2 {
     padding-bottom: 1rem;
 }
 
-
+main img {
+    width: 100%;
+}
 
 /* #endregion Utilities */
 
@@ -176,9 +189,7 @@ h1 {
 .jumbotron {
     background-color: var(--drop-principal);
 }
-.jumbotron img {
-    width: 100%;
-}
+
 
 .jumbotron .col_text {
     flex-direction: column;
@@ -242,6 +253,16 @@ hr {
     gap: 0.5rem;
 }
 
+
+.jsb_ac {
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.col_text h3 {
+    padding-bottom: 1rem;
+}
 
 
 
