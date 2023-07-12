@@ -121,7 +121,6 @@ main img {
 
 .btn_primary:hover {
     background-color: var(--drop-principal);
-    /* border: 1px solid var(--drop-accent); */
     color: var(--drop-accent);
     transition: all 0.5s;
 }
@@ -494,6 +493,11 @@ hr {
 .foot_site a {
     text-decoration: none;
     color: var(--drop-white);
+}
+
+.foot_site a:hover {
+    color: var(--drop-accent);
+    
 }
 
 
