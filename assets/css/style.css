@@ -31,6 +31,82 @@ body {
 /* #endregion Common */
 
 
+/* #region Utilities */
+
+.d_flex {
+    display: flex;
+}
+
+.choise a {
+    color: var(--drop-black);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+main .container {
+    padding: 7rem 4rem;
+}
+
+.jumbotron .container {
+    height: 550px;
+    padding-top: 3rem;
+}
+
+main {
+    height: calc(100vh - 5rem);
+    overflow-y: auto;
+    position: relative;
+    width: 100%;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.col_text {
+    width: calc(100% / 12 * 4);    
+}
+
+.col_img {
+    width: calc(100% / 12 * 8);
+}
+
+h2 {
+    font-size: 3rem;
+    padding-bottom: 2.5rem;
+}
+
+.p_b1 {
+    padding-bottom: 1rem;
+}
+
+main img {
+    width: 100%;
+}
+
+.col_cards {
+    width: calc(100% / 12 * 4 - 2rem);
+    margin: 3rem 0;
+}
+
+.col_8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col_4 {
+    width: calc(100% / 12 * 4);
+}
+
+/* #endregion Utilities */
+
+
 /* #region Btn */
 
 .btn {
@@ -76,108 +152,13 @@ body {
 /* #endregion Btn */
 
 
-
-/* #region Debug */
-
-.debug header {
-    background-color: #a2d39b;
-}
-
-.debug main {
-    background-color: rgba(0, 139, 139, 0.556);
-    height: 1000px;
-}
-
-.debug .container {
-    background-color: rgba(255, 166, 0, 0.596);
-}
-
-
-
-/* #endregion Debug */
-
-
-/* #region Utilities */
-
-.d_flex {
-    display: flex;
-}
-
-.choise a {
-    color: var(--drop-black);
-}
-
-a {
-    text-decoration: none;
-}
-
-.container {
-    max-width: 80%;
-    margin: auto;
-}
-
-main .container {
-    padding: 7rem 4rem;
-}
-
-.container_jumbo {
-    height: 600px;
-    padding-top: 3rem;
-    max-width: 80%;
-    margin: auto;
-}
-
-main {
-    height: calc(100vh - 5rem);
-    overflow-y: auto;
-    position: relative;
-    width: 100%;
-}
-
-.col_text {
-    width: calc(100% / 12 * 4);    
-}
-
-.col_img {
-    width: calc(100% / 12 * 8);
-}
-
-h2 {
-    font-size: 3rem;
-    padding-bottom: 2.5rem;
-}
-
-.p_b1 {
-    padding-bottom: 1rem;
-}
-
-main img {
-    width: 100%;
-}
-
-.col_cards {
-    width: calc(100% / 12 * 4 - 2rem);
-    margin: 3rem 0;
-}
-
-.col_8 {
-    width: calc(100% / 12 * 8);
-}
-
-.col_4 {
-    width: calc(100% / 12 * 4);
-}
-
-/* #endregion Utilities */
-
-
 /* #region Header */
 
 header {
     position: sticky;
     width: 100%;
     z-index: 10;
-    box-shadow: 0px 1px 3px 1px var(--drop-accent);
+    box-shadow: 0 0 10px 0 var(--drop-accent);
     
 }
 
@@ -225,6 +206,7 @@ h1 {
 
 .jumbotron {
     background-color: var(--drop-principal);
+    box-shadow: 0px 6px 6px 4px var(--drop-principal);
 }
 
 
@@ -252,18 +234,17 @@ h1 {
     padding-right: 1rem;
 }
 
-.plans .col_cards {
-    border: 2px solid var(--drop-dark-light);
-}
-
 .col_cards h4 {
     padding-bottom: 2rem;
 }
 
 .col_12 {
     width: 100%;
+}
+
+.col_cards, .col_12 {
+    box-shadow: -4px 6px 5px 4px var(--drop-dark-light);
     border: 2px solid var(--drop-dark-light);
-    
 }
 
 .row_cards {
