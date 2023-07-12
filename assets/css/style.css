@@ -484,6 +484,10 @@ hr {
     width: calc(100% / 5);
 }
 
+.foot_site .container {
+    flex-wrap: wrap;
+}
+
 .unstyled {
     list-style: none;
     padding-top: 1rem;
@@ -500,5 +504,26 @@ hr {
     
 }
 
+.social_links {
+    /* margin-top: 4rem;
+    border-top: 1px solid var(--drop-light); */
+    padding-top: 4rem;
+}
+
+.socials {
+    gap: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+.social_links hr {
+    width: 50%;
+}
+
+.languages {
+    padding-top: 2rem;
+    gap: 1rem;
+    align-items: center;
+}
 
 /* #endregion Footer */
