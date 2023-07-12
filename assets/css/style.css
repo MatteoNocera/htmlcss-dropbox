@@ -359,6 +359,10 @@ hr {
     justify-content: center;
 }
 
+.col_int img {
+    filter: invert(1);
+}
+
 /* #endregion Users */
 
 
