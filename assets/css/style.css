@@ -28,18 +28,6 @@ body {
     --drop-clear-channel: #ffd830;
 }
 
-.d_flex {
-    display: flex;
-}
-
-header a {
-    color: var(--drop-black);
-}
-
-a {
-    text-decoration: none;
-}
-
 /* #endregion Common */
 
 
@@ -53,6 +41,19 @@ a {
 .btn_primary {
     background-color: var(--drop-accent);
     color: var(--drop-white);
+}
+
+.btn_primary:hover {
+    background-color: var(--drop-principal);
+    /* border: 1px solid var(--drop-accent); */
+    color: var(--drop-accent);
+    transition: all 0.5s;
+}
+
+.btn_secondary:hover, .btn_to_you:hover {
+    background-color: var(--drop-black);
+    color: var(--drop-light);
+    transition: all 800ms;
 }
 
 .buy {
@@ -97,6 +98,18 @@ a {
 
 
 /* #region Utilities */
+
+.d_flex {
+    display: flex;
+}
+
+.choise a {
+    color: var(--drop-black);
+}
+
+a {
+    text-decoration: none;
+}
 
 .container {
     max-width: 80%;
@@ -181,16 +194,12 @@ nav {
     align-items: center;
 }
 
-#start {
-    color: var(--drop-white);
-}
-
 .choise {
     transition: all 3s;
 }
 
 header .choise:hover {
-    border-bottom: 10px solid var(--drop-accent);
+    border-bottom: 1px solid var(--drop-accent);
 }
 
 
@@ -338,7 +347,7 @@ hr {
 .col_3 {
     width: calc(100% / 12 * 4);
     flex-wrap: wrap;
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
     
 }
 
@@ -353,7 +362,7 @@ hr {
 
 .col_int {
     width: calc(100% / 12 * 6);
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
     padding: 2rem;
     align-items: center;
     justify-content: center;
@@ -432,17 +441,49 @@ hr {
     margin: 2.5rem 0;
 }
 
+.answer {
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.row_questions:hover i {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+
 .question {
     display: none;
 }
 
-.questions .col_4 {
-    text-align: end;
-    padding-right: 2rem;
+.row_questions:hover .question {
+    display: block;
 }
 
-.questions .col_4:hover {
-    display: none;
+.question {
+    color: var(--drop-white);
+    padding-top: 1rem;
+}
+
+.row_questions:hover .question {
+    overflow-y: auto;
+    color: var(--drop-black);
+    animation-name: answer;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes answer {
+
+    from {
+        color: var(--drop-white);
+    }
+    to {
+        color: var(--drop-black);
+    }
+}
+
+.question {
+    overflow-y: auto;
 }
 
 /* #endregion Answer  */
