@@ -148,6 +148,7 @@ main img {
 
 
 
+
 /* #endregion Btn */
 
 
@@ -182,7 +183,13 @@ header .choise:hover {
     border-bottom: 1px solid var(--drop-accent);
 }
 
+.menu_hidden {
+    display: none;
+}
 
+.choise:hover .menu_hidden {
+    display: inline;
+}
 
 
 
@@ -527,3 +534,39 @@ hr {
 }
 
 /* #endregion Footer */
+
+
+/* #region Bonus */
+
+.container_bonus {
+    width: 40%;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+/* a {
+    text-decoration: none;
+} */
+
+.btn_bonus {
+    border: 1px solid var(--drop-black);
+    border-radius: 1rem;
+    padding: 2rem 0.8rem;
+    font-size: 2rem;
+}
+
+.bonus_1 {
+    width: calc(100% / 12 * 1);
+}
+
+.bonus_11 {
+    width: calc(100% / 12 * 11);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn_bonus a {
+    color: var(--drop-black);
+}
+
+/* #endregion Bonus */
