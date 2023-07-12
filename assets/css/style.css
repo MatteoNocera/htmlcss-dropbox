@@ -202,7 +202,7 @@ header .choise:hover {
 
 /* #region Main */
 
-/* Jumbotron */
+/* #region Jumbotron */
 
 h1 {
     padding-bottom: 2rem;
@@ -233,7 +233,10 @@ h1 {
     color: var(--drop-black);
 }
 
-/* Plans */
+/* #endregion Jumbotron */
+
+
+/* #region Plans */
 
 .period label {
     padding-left: 0.2rem;
@@ -285,7 +288,11 @@ hr {
     gap: 0.5rem;
 }
 
-/* Find_Partner */
+/* #endregion Plans */
+
+
+
+/* #region Find_Partner */
 
 
 .jsb_ac {
@@ -294,7 +301,10 @@ hr {
     gap: 3rem;
 }
 
-/* Operations */
+/* #endregion Find_Partner */
+
+
+/* #region Operations */
 
 .col_text h3 {
     padding-bottom: 1rem;
@@ -309,14 +319,21 @@ hr {
     padding: 1rem 0;
 }
 
-/* Numbers */
+/* #endregion Operations */
+
+
+
+/* #region Numbers */
 
 .numbers a {
     text-decoration: underline;
     color: var(--drop-accent);
 }
 
-/* Users */
+/* #endregion Numbers */
+
+
+/* #region Users */
 
 .col_3 {
     width: calc(100% / 12 * 4);
@@ -342,7 +359,11 @@ hr {
     justify-content: center;
 }
 
-/* User's Blocks */
+/* #endregion Users */
+
+
+
+/* #region User's Blocks */
 
 #design {
     background-color: var(--drop-designit);
@@ -385,7 +406,10 @@ hr {
     
 }
 
-/* To_you  */
+/* #endregion User's Blocks */
+
+
+/* #region To_you  */
 
 .to_you {
     background-color: var(--drop-principal);
@@ -395,7 +419,9 @@ hr {
     color: var(--drop-asu);
 }
 
-/* Answer  */
+/* #endregion To_you */
+
+/* #region Answer  */
 
 .questions hr {
     width: 100%;
@@ -414,6 +440,10 @@ hr {
 .questions .col_4:hover {
     display: none;
 }
+
+/* #endregion Answer  */
+
+
 
 /* #endregion Main */
 
